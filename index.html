@@ -262,7 +262,7 @@
     <!-- Header: Profile + Introduction -->
     <div class="header">
         <div class="profile-section">
-            <img src="/salahuddin.jpg" alt="Syed Salahuddin Quadri" class="profile-img">
+            <img src="salahuddin.jpg" alt="Syed Salahuddin Quadri" class="profile-img">
             <div class="contact-info">
                 <div><a href="mailto:salahuddinq125@gmail.com">Email</a></div>
                 <div><a href="https://github.com/Salahuddin-quadri" target="_blank">GitHub</a></div>
@@ -274,13 +274,13 @@
         <div class="intro-section">
             <h1>About Me</h1>
             <p>
-                I am a final-year undergraduate at BMS Institute of Technology & Management, majoring in Artificial Intelligence and Machine Learning. Currently, I am a research intern working on pose estimation and autoencoder architectures at the <a href="https://iisc.ac.in" target="_blank">Center of Data for Public Good (CDPG), IISc</a>.
+                I am a final-year undergraduate at BMS Institute of Technology & Management, majoring in Artificial Intelligence and Machine Learning. I recently completed a 6-month research internship at the <a href="https://iisc.ac.in" target="_blank">Center of Data for Public Good (CDPG), IISc</a>, where I worked on pose estimation using Stacked Hourglass models.
             </p>
             <p>
-                My research interests focus on deep learning, computer vision, and medical AI. I have experience developing machine learning systems for healthcare applications, including chronic kidney disease detection and melanoma diagnosis. Previously, I worked at Simpragma Solutions implementing text-to-speech models and containerized ML solutions.
+                My research interests focus on computer vision, particularly in medical imaging and vision transformers. Currently, I am working on melanoma diagnosis and prognosis using self-supervised Vision Transformers, with a research paper under review. I have hands-on experience developing deep learning systems for healthcare applications and optimizing model performance through advanced techniques.
             </p>
             <p>
-                My long-term vision is to develop AI systems that can reliably assist in medical diagnosis and improve healthcare accessibility through advanced computer vision and deep learning techniques.
+                My long-term vision is to advance computer vision systems for medical imaging, building interpretable and clinically relevant AI models that can improve healthcare diagnostics and patient outcomes.
             </p>
         </div>
     </div>
@@ -288,10 +288,10 @@
     <!-- News Section -->
     <h2>News</h2>
     <ul class="news-list">
-        <li><span class="news-date">March 2025:</span> Started AI Research Internship at Center of Data for Public Good, IISc, working on pose estimation systems.</li>
+        <li><span class="news-date">January 2025:</span> Started working on Melanoma Diagnosis and Prognosis using Self-Supervised Vision Transformers. Research paper currently under review.</li>
+        <li><span class="news-date">September 2024:</span> Completed 6-month AI Research Internship at Center of Data for Public Good, IISc, working on auto-rickshaw pose estimation.</li>
         <li><span class="news-date">January 2025:</span> Completed ML Engineer Internship at Simpragma Solutions, focusing on TTS models and Docker containerization.</li>
         <li><span class="news-date">October 2024:</span> Completed Neural Networks & Deep Learning certification from Coursera with 92.10% score.</li>
-        <li><span class="news-date">August 2024:</span> Completed OpenCV Computer Vision certification.</li>
     </ul>
 
     <!-- Research & Projects -->
@@ -299,11 +299,45 @@
 
     <div class="project">
         <div class="project-header">
-            <img src="https://via.placeholder.com/180x120" alt="CKD Project" class="project-image">
+            <img src="https://via.placeholder.com/180x120" alt="Melanoma Project" class="project-image">
             <div class="project-info">
-                <div class="project-title">Chronic Kidney Disease Detection System</div>
+                <div class="project-title">Melanoma Diagnosis and Prognosis Using Self-Supervised Vision Transformers</div>
                 <div class="project-authors">Syed Salahuddin Quadri</div>
-                <div class="project-venue">Machine Learning for Healthcare, 2024</div>
+                <div class="project-venue">Computer Vision for Medical Imaging, January 2025 - Present</div>
+                <div class="project-links">
+                    <a href="#" target="_blank">[Paper Under Review]</a>
+                </div>
+            </div>
+        </div>
+        <p style="font-size: 14px; color: #666; line-height: 1.6;">
+            Designed a deep learning framework leveraging a fine-tuned DINO Vision Transformer (ViT) as a domain-specific feature extractor on 14,000 unlabeled dermoscopic images. Developed a dual-head architecture for joint melanoma classification and Breslow thickness regression, enabling both diagnosis and prognosis. Outperformed standard CNN-based approaches by incorporating self-supervised pretraining, multi-task learning, and domain adaptation.
+        </p>
+    </div>
+
+    <div class="project">
+        <div class="project-header">
+            <img src="" alt="Recommender Project" class="project-image">
+            <div class="project-info">
+                <div class="project-title">End-to-End Sports Product Recommendation System with MLOps</div>
+                <div class="project-authors">Syed Salahuddin Quadri</div>
+                <div class="project-venue">MLOps & Production Systems, September 2024 - October 2024</div>
+                <div class="project-links">
+                    <a href="https://github.com/Salahuddin-quadri/End-to-End-Recommender-System" target="_blank">[Code]</a>
+                </div>
+            </div>
+        </div>
+        <p style="font-size: 14px; color: #666; line-height: 1.6;">
+            Developed a complete MLOps pipeline for a sports product recommendation system using collaborative filtering on the Amazon dataset. Implemented data versioning, experiment tracking, automated retraining, model registry, containerized deployment, and monitoring entirely on a local setup. Showcased scalable and production-ready ML infrastructure without relying on cloud services.
+        </p>
+    </div>
+
+    <div class="project">
+        <div class="project-header">
+            <img src="ckd.png" alt="CKD Project" class="project-image">
+            <div class="project-info">
+                <div class="project-title">Chronic Kidney Disease Detection Using Ensemble Learning</div>
+                <div class="project-authors">Syed Salahuddin Quadri</div>
+                <div class="project-venue">Machine Learning for Healthcare, September 2024 - December 2024</div>
                 <div class="project-links">
                     <a href="https://github.com/Salahuddin-quadri/CKD" target="_blank">[Code]</a>
                     <a href="https://github.com/Salahuddin-quadri/CKD" target="_blank">[Project]</a>
@@ -311,55 +345,21 @@
             </div>
         </div>
         <p style="font-size: 14px; color: #666; line-height: 1.6;">
-            Developed an advanced ensemble learning system for chronic kidney disease detection using comprehensive feature engineering. The system achieves high accuracy in medical diagnosis through sophisticated machine learning techniques and optimized data preprocessing pipelines.
+            Implemented multiple machine learning models and advanced ensemble techniques for detecting Chronic Kidney Disease. Performed extensive feature engineering and experimentation, leading to significant improvement in prediction accuracy and model robustness.
         </p>
     </div>
 
     <div class="project">
         <div class="project-header">
-            <img src="https://via.placeholder.com/180x120" alt="Melanoma Project" class="project-image">
+            <img src="https://via.placeholder.com/180x120" alt="Object Detection Project" class="project-image">
             <div class="project-info">
-                <div class="project-title">Melanoma Dermoscopic Prognosis</div>
+                <div class="project-title">Object Detection and AI-Powered Text Generation</div>
                 <div class="project-authors">Syed Salahuddin Quadri</div>
-                <div class="project-venue">Computer Vision for Healthcare, 2024</div>
-                <div class="project-links">
-                    <a href="https://github.com/Salahuddin-quadri/Melanoma-Dermoscopic-Prognosis" target="_blank">[Code]</a>
-                </div>
+                <div class="project-venue">Computer Vision & NLP, March 2023 - July 2023</div>
             </div>
         </div>
         <p style="font-size: 14px; color: #666; line-height: 1.6;">
-            Implemented a deep learning-based system for melanoma detection from dermoscopic images. Utilized convolutional neural networks and advanced image processing techniques to classify skin lesions with high diagnostic accuracy.
-        </p>
-    </div>
-
-    <div class="project">
-        <div class="project-header">
-            <img src="https://via.placeholder.com/180x120" alt="Lip Reading Project" class="project-image">
-            <div class="project-info">
-                <div class="project-title">Enhanced Lip-Reading System</div>
-                <div class="project-authors">Syed Salahuddin Quadri</div>
-                <div class="project-venue">Computer Vision & NLP, 2024</div>
-            </div>
-        </div>
-        <p style="font-size: 14px; color: #666; line-height: 1.6;">
-            Developed a CNN-based lip-reading model with advanced image processing achieving significant accuracy and speed improvements. The system integrates computer vision techniques for real-time visual speech recognition.
-        </p>
-    </div>
-
-    <div class="project">
-        <div class="project-header">
-            <img src="https://via.placeholder.com/180x120" alt="Recommender Project" class="project-image">
-            <div class="project-info">
-                <div class="project-title">End-to-End Recommender System</div>
-                <div class="project-authors">Syed Salahuddin Quadri</div>
-                <div class="project-venue">Machine Learning, 2024</div>
-                <div class="project-links">
-                    <a href="https://github.com/Salahuddin-quadri/End-to-End-Recommender-System" target="_blank">[Code]</a>
-                </div>
-            </div>
-        </div>
-        <p style="font-size: 14px; color: #666; line-height: 1.6;">
-            Built a complete recommendation system using collaborative filtering and deep learning techniques. Implemented data pipelines, model training, and deployment workflows for scalable recommendations.
+            Developed a real-time application combining object detection using YOLO and OpenCV with AI-driven text generation using the ChatGPT API. Enabled automated analysis and description of objects, demonstrating seamless integration of computer vision and natural language processing.
         </p>
     </div>
 
@@ -369,9 +369,9 @@
     <div class="experience-item">
         <div class="experience-title">AI Research Intern</div>
         <div class="experience-org">Center of Data for Public Good (CDPG), FSID, Indian Institute of Science</div>
-        <div class="experience-date">March 2025 - Present</div>
+        <div class="experience-date">March 2025 - September 2025</div>
         <div class="experience-desc">
-            Working on pose estimation systems using Stacked Hourglass models. Implemented advanced augmentation techniques and hyperparameter optimization. Developing expertise in autoencoder architectures for computer vision applications.
+            Worked on auto-rickshaw pose estimation using Stacked Hourglass models. Restored an outdated model by resolving dependencies and fixing training pipelines. Improved model accuracy by 3-4% through dataset expansion with manual keypoint annotations, applied appropriate augmentation techniques, and performed hyperparameter tuning using grid search and cosine annealing learning rate scheduling. Built strong expertise in Hourglass architectures and autoencoder-based models.
         </div>
     </div>
 
@@ -380,7 +380,7 @@
         <div class="experience-org">Simpragma Solutions Pvt Ltd.</div>
         <div class="experience-date">October 2024 - January 2025</div>
         <div class="experience-desc">
-            Implemented multiple text-to-speech models with optimized CPU inference. Containerized ML models using Docker for scalable deployment. Established debugging workflows and performance evaluation frameworks for production systems.
+            Implemented and experimented with multiple text-to-speech (TTS) models. Optimized model inference on CPU and benchmarked performance across different architectures. Containerized ML models using Docker for scalable deployment and reproducibility. Established debugging workflows and performance evaluation frameworks for production systems.
         </div>
     </div>
 
