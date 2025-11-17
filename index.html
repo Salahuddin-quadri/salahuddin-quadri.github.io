@@ -3,26 +3,8 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Syed Salahuddin Quadri - AI/ML Engineer</title>
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
-    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@300;400;500;600&family=Space+Grotesk:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <title>Syed Salahuddin Quadri</title>
     <style>
-        :root {
-            --primary-color: #10b981;
-            --secondary-color: #059669;
-            --accent-color: #34d399;
-            --neural-glow: #6ee7b7;
-            --text-primary: #111827;
-            --text-secondary: #6b7280;
-            --background: #ffffff;
-            --surface: #f9fafb;
-            --border-color: #e5e7eb;
-            --node-color: #10b981;
-            --connection-color: #34d399;
-            --gradient: linear-gradient(135deg, #10b981 0%, #059669 50%, #047857 100%);
-        }
-
         * {
             margin: 0;
             padding: 0;
@@ -30,672 +12,414 @@
         }
 
         body {
-            font-family: 'Space Grotesk', sans-serif;
-            font-size: 14px;
-            line-height: 1.5;
-            color: var(--text-primary);
-            background-color: var(--background);
-            font-weight: 400;
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Helvetica', 'Arial', sans-serif;
+            line-height: 1.6;
+            color: #333;
+            background-color: #fff;
+            max-width: 900px;
+            margin: 0 auto;
+            padding: 40px 20px;
         }
 
-        /* Neural Network Background */
-        .neural-bg {
-            position: absolute;
-            top: 0;
-            left: 0;
-            width: 100%;
-            height: 100%;
-            overflow: hidden;
-            z-index: 1;
-        }
-
-        .neural-node {
-            position: absolute;
-            width: 8px;
-            height: 8px;
-            background: var(--neural-glow);
-            border-radius: 50%;
-            opacity: 0.6;
-            animation: pulse 2s infinite alternate;
-        }
-
-        .neural-connection {
-            position: absolute;
-            height: 1px;
-            background: linear-gradient(90deg, transparent, var(--connection-color), transparent);
-            opacity: 0.3;
-            animation: flow 3s infinite linear;
-        }
-
-        @keyframes pulse {
-            0% { opacity: 0.3; transform: scale(0.8); }
-            100% { opacity: 0.8; transform: scale(1.2); }
-        }
-
-        @keyframes flow {
-            0% { opacity: 0.1; }
-            50% { opacity: 0.5; }
-            100% { opacity: 0.1; }
-        }
-
-        /* Header Styles */
+        /* Header Section */
         .header {
-            background: var(--gradient);
-            color: white;
-            padding: 50px 0 40px;
-            position: relative;
-            overflow: hidden;
+            display: grid;
+            grid-template-columns: 200px 1fr;
+            gap: 40px;
+            margin-bottom: 50px;
+            align-items: start;
         }
 
-        .header-content {
-            position: relative;
-            z-index: 2;
+        .profile-section {
             text-align: center;
         }
 
-        .header h1 {
-            font-family: 'JetBrains Mono', monospace;
-            font-size: 2.5rem;
-            font-weight: 600;
-            margin-bottom: 8px;
-            letter-spacing: -0.02em;
+        .profile-img {
+            width: 180px;
+            height: 180px;
+            border-radius: 50%;
+            object-fit: cover;
+            margin-bottom: 20px;
+            border: 3px solid #e0e0e0;
         }
 
-        .header .subtitle {
-            font-size: 1rem;
-            font-weight: 400;
-            opacity: 0.95;
+        .contact-info {
+            font-size: 14px;
+            line-height: 1.8;
+        }
+
+        .contact-info a {
+            color: #0066cc;
+            text-decoration: none;
+        }
+
+        .contact-info a:hover {
+            text-decoration: underline;
+        }
+
+        .intro-section h1 {
+            font-size: 32px;
+            font-weight: 600;
+            margin-bottom: 20px;
+            color: #000;
+        }
+
+        .intro-section p {
+            font-size: 15px;
+            line-height: 1.7;
+            margin-bottom: 15px;
+            text-align: justify;
+        }
+
+        .intro-section a {
+            color: #0066cc;
+            text-decoration: none;
+        }
+
+        .intro-section a:hover {
+            text-decoration: underline;
+        }
+
+        /* Section Headers */
+        h2 {
+            font-size: 24px;
+            font-weight: 600;
+            margin: 40px 0 20px 0;
+            color: #000;
+            border-bottom: 2px solid #e0e0e0;
+            padding-bottom: 8px;
+        }
+
+        /* News Section */
+        .news-list {
+            list-style: none;
+            font-size: 14px;
+        }
+
+        .news-list li {
+            margin-bottom: 12px;
+            padding-left: 0;
+        }
+
+        .news-date {
+            font-weight: 600;
+            color: #000;
+        }
+
+        /* Projects Section */
+        .project {
+            margin-bottom: 35px;
+        }
+
+        .project-header {
+            display: flex;
+            align-items: flex-start;
+            gap: 20px;
+            margin-bottom: 12px;
+        }
+
+        .project-image {
+            width: 180px;
+            height: 120px;
+            object-fit: cover;
+            border: 1px solid #e0e0e0;
+            flex-shrink: 0;
+        }
+
+        .project-info {
+            flex: 1;
+        }
+
+        .project-title {
+            font-size: 16px;
+            font-weight: 600;
+            margin-bottom: 5px;
+            color: #000;
+        }
+
+        .project-authors {
+            font-size: 14px;
+            color: #666;
+            margin-bottom: 8px;
+        }
+
+        .project-venue {
+            font-size: 14px;
+            font-style: italic;
+            color: #666;
+            margin-bottom: 8px;
+        }
+
+        .project-links {
+            font-size: 14px;
+        }
+
+        .project-links a {
+            color: #0066cc;
+            text-decoration: none;
+            margin-right: 15px;
+        }
+
+        .project-links a:hover {
+            text-decoration: underline;
+        }
+
+        /* Experience Section */
+        .experience-item {
+            margin-bottom: 30px;
+        }
+
+        .experience-title {
+            font-size: 16px;
+            font-weight: 600;
+            color: #000;
+        }
+
+        .experience-org {
+            font-size: 14px;
+            color: #666;
+            margin-bottom: 5px;
+        }
+
+        .experience-date {
+            font-size: 14px;
+            color: #999;
+            font-style: italic;
+            margin-bottom: 8px;
+        }
+
+        .experience-desc {
+            font-size: 14px;
+            line-height: 1.6;
+            color: #333;
+        }
+
+        /* Skills Section */
+        .skills-grid {
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            gap: 20px;
+        }
+
+        .skill-category {
             margin-bottom: 20px;
         }
 
-        .social-links {
-            display: flex;
-            justify-content: center;
-            gap: 12px;
-            margin-top: 20px;
-        }
-
-        .social-links a {
-            display: inline-flex;
-            align-items: center;
-            justify-content: center;
-            width: 36px;
-            height: 36px;
-            background: rgba(255, 255, 255, 0.1);
-            border-radius: 8px;
-            color: white;
-            text-decoration: none;
-            font-size: 1rem;
-            transition: all 0.3s ease;
-            backdrop-filter: blur(10px);
-        }
-
-        .social-links a:hover {
-            background: rgba(255, 255, 255, 0.2);
-            transform: translateY(-2px);
-            box-shadow: 0 0 20px var(--neural-glow);
-        }
-
-        /* Section Styles */
-        .section {
-            padding: 40px 0;
-            position: relative;
-        }
-
-        .section:nth-child(even) {
-            background-color: var(--surface);
-        }
-
-        .section h2 {
-            color: var(--primary-color);
-            font-size: 1.5rem;
+        .skill-category-title {
+            font-size: 15px;
             font-weight: 600;
-            margin-bottom: 30px;
-            text-align: center;
-            letter-spacing: -0.02em;
-            font-family: 'JetBrains Mono', monospace;
+            color: #000;
+            margin-bottom: 8px;
         }
 
-        /* Neural Network Nodes for Section Headers */
-        .section h2::before {
-            content: '';
-            display: inline-block;
-            width: 10px;
-            height: 10px;
-            background: var(--node-color);
-            border-radius: 50%;
-            margin-right: 12px;
-            box-shadow: 0 0 10px var(--neural-glow);
-            animation: pulse 2s infinite alternate;
-        }
-
-        /* Card Styles */
-        .card {
-            background: var(--background);
-            border: 1px solid var(--border-color);
-            border-radius: 8px;
-            padding: 20px;
-            box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
-            transition: all 0.3s ease;
-            height: 100%;
-            font-size: 13px;
-        }
-
-        .card:hover {
-            box-shadow: 0 4px 15px rgba(16, 185, 129, 0.1);
-            transform: translateY(-2px);
-            border-color: var(--accent-color);
-        }
-
-        .card-title {
-            color: var(--primary-color);
-            font-size: 1.1rem;
-            font-weight: 600;
-            margin-bottom: 6px;
-            line-height: 1.3;
-        }
-
-        .card-company, .card-institution {
-            color: var(--text-secondary);
-            font-weight: 500;
-            margin-bottom: 6px;
-            font-size: 12px;
-        }
-
-        .date-badge {
-            display: inline-block;
-            background: var(--accent-color);
-            color: white;
-            padding: 2px 8px;
-            border-radius: 12px;
-            font-size: 11px;
-            font-weight: 500;
-            margin-bottom: 10px;
-            font-family: 'JetBrains Mono', monospace;
-        }
-
-        .card ul {
-            margin: 8px 0 0 0;
-            padding-left: 0;
-            list-style: none;
-        }
-
-        .card li {
-            position: relative;
-            padding-left: 16px;
-            margin-bottom: 4px;
-            color: var(--text-secondary);
-            line-height: 1.4;
-            font-size: 12px;
-        }
-
-        .card li::before {
-            content: '';
-            position: absolute;
-            left: 0;
-            top: 8px;
-            width: 4px;
-            height: 4px;
-            background: var(--node-color);
-            border-radius: 50%;
-            box-shadow: 0 0 4px var(--neural-glow);
-        }
-
-        /* Skills Section with Neural Network Layout */
-        .skills-network {
-            display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
-            gap: 20px;
-            position: relative;
-        }
-
-        .skills-category {
-            background: var(--background);
-            border-radius: 8px;
-            padding: 16px;
-            border: 1px solid var(--border-color);
-            position: relative;
-        }
-
-        .skills-category::before {
-            content: '';
-            position: absolute;
-            top: -5px;
-            left: -5px;
-            width: 10px;
-            height: 10px;
-            background: var(--node-color);
-            border-radius: 50%;
-            box-shadow: 0 0 8px var(--neural-glow);
-        }
-
-        .skills-category h5 {
-            color: var(--primary-color);
-            font-size: 1rem;
-            font-weight: 600;
-            margin-bottom: 12px;
-            font-family: 'JetBrains Mono', monospace;
-        }
-
-        .skill-tag {
-            display: inline-block;
-            background: var(--surface);
-            border: 1px solid var(--border-color);
-            color: var(--text-primary);
-            padding: 4px 8px;
-            border-radius: 4px;
-            font-size: 11px;
-            font-weight: 500;
-            margin: 2px 3px 2px 0;
-            transition: all 0.2s ease;
-            font-family: 'JetBrains Mono', monospace;
-        }
-
-        .skill-tag:hover {
-            background: var(--accent-color);
-            color: white;
-            border-color: var(--accent-color);
-            box-shadow: 0 0 8px var(--neural-glow);
-        }
-
-        /* Compact Education */
-        .education-compact {
-            display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-            gap: 16px;
-        }
-
-        .education-item {
-            background: var(--background);
-            border: 1px solid var(--border-color);
-            border-radius: 8px;
-            padding: 16px;
-            transition: all 0.3s ease;
-        }
-
-        .education-item:hover {
-            border-color: var(--accent-color);
-            box-shadow: 0 0 10px rgba(16, 185, 129, 0.1);
-        }
-
-        .education-item .card-title {
-            font-size: 1rem;
-            margin-bottom: 4px;
-        }
-
-        .education-item .date-badge {
-            float: right;
-            margin-bottom: 0;
-        }
-
-        /* Project Grid */
-        .projects-grid {
-            display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
-            gap: 16px;
-        }
-
-        /* Certifications Compact */
-        .cert-grid {
-            display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-            gap: 12px;
-        }
-
-        .cert-item {
-            background: var(--background);
-            border: 1px solid var(--border-color);
-            border-radius: 6px;
-            padding: 12px;
-            transition: all 0.3s ease;
-            font-size: 12px;
-        }
-
-        .cert-item:hover {
-            border-color: var(--accent-color);
-            box-shadow: 0 0 8px rgba(16, 185, 129, 0.1);
-        }
-
-        .cert-title {
-            font-weight: 600;
-            color: var(--text-primary);
-            margin-bottom: 4px;
-            font-size: 13px;
-        }
-
-        .cert-details {
-            color: var(--text-secondary);
-            font-size: 11px;
-            font-family: 'JetBrains Mono', monospace;
-        }
-
-        /* Project Links */
-        .project-link {
-            display: inline-flex;
-            align-items: center;
-            gap: 4px;
-            color: var(--primary-color);
-            text-decoration: none;
-            font-weight: 500;
-            margin-top: 8px;
-            font-size: 12px;
-            transition: all 0.2s ease;
-        }
-
-        .project-link:hover {
-            color: var(--secondary-color);
-            text-decoration: none;
+        .skill-items {
+            font-size: 14px;
+            color: #666;
+            line-height: 1.8;
         }
 
         /* Footer */
         footer {
-            background: var(--text-primary);
-            color: rgba(255, 255, 255, 0.8);
+            margin-top: 60px;
+            padding-top: 20px;
+            border-top: 1px solid #e0e0e0;
             text-align: center;
-            padding: 30px 0;
-            font-size: 12px;
-        }
-
-        footer a {
-            color: rgba(255, 255, 255, 0.9);
-            text-decoration: none;
+            font-size: 13px;
+            color: #999;
         }
 
         /* Responsive */
         @media (max-width: 768px) {
-            .profile-image {
-                width: 100px;
-                height: 100px;
-            }
-            
-            .neural-ring {
-                width: 120px;
-                height: 120px;
-                top: -10px;
-                left: -10px;
-            }
-            
-            .header h1 {
-                font-size: 2rem;
-            }
-            
-            .section {
-                padding: 30px 0;
-            }
-            
-            .card {
-                padding: 16px;
-            }
-            
-            .skills-network {
+            .header {
                 grid-template-columns: 1fr;
+                text-align: center;
             }
-            
-            .education-compact {
+
+            .profile-section {
+                margin-bottom: 30px;
+            }
+
+            .intro-section {
+                text-align: left;
+            }
+
+            .project-header {
+                flex-direction: column;
+            }
+
+            .project-image {
+                width: 100%;
+                height: 200px;
+            }
+
+            .skills-grid {
                 grid-template-columns: 1fr;
             }
         }
     </style>
 </head>
 <body>
-    <!-- Header with Neural Network Background -->
-    <header class="header">
-        <div class="neural-bg" id="neuralBg"></div>
-        <div class="container">
-            <div class="header-content">
-                <h1>Syed Salahuddin Quadri</h1>
-                <p class="subtitle">AI/ML Engineer • Neural Networks • Computer Vision • Deep Learning</p>
-                <div class="social-links">
-                    <a href="https://www.linkedin.com/in/syed-salahuddin-quadri-1750261b4/" target="_blank" title="LinkedIn">
-                        <i class="fab fa-linkedin-in"></i>
-                    </a>
-                    <a href="https://github.com/salahuddin-quadri" target="_blank" title="GitHub">
-                        <i class="fab fa-github"></i>
-                    </a>
-                    <a href="mailto:salahuddinq125@gmail.com" title="Email">
-                        <i class="fas fa-envelope"></i>
-                    </a>
-                    <a href="tel:+918310917437" title="Phone">
-                        <i class="fas fa-phone"></i>
-                    </a>
+    <!-- Header: Profile + Introduction -->
+    <div class="header">
+        <div class="profile-section">
+            <img src="https://via.placeholder.com/180" alt="Syed Salahuddin Quadri" class="profile-img">
+            <div class="contact-info">
+                <div><a href="mailto:salahuddinq125@gmail.com">Email</a></div>
+                <div><a href="https://github.com/Salahuddin-quadri" target="_blank">GitHub</a></div>
+                <div><a href="https://www.linkedin.com/in/syed-salahuddin-quadri-1750261b4/" target="_blank">LinkedIn</a></div>
+                <div><a href="cv.pdf" target="_blank">CV</a></div>
+            </div>
+        </div>
+
+        <div class="intro-section">
+            <h1>About Me</h1>
+            <p>
+                I am a final-year undergraduate at BMS Institute of Technology & Management, majoring in Artificial Intelligence and Machine Learning. Currently, I am a research intern working on pose estimation and autoencoder architectures at the <a href="https://iisc.ac.in" target="_blank">Center of Data for Public Good (CDPG), IISc</a>.
+            </p>
+            <p>
+                My research interests focus on deep learning, computer vision, and medical AI. I have experience developing machine learning systems for healthcare applications, including chronic kidney disease detection and melanoma diagnosis. Previously, I worked at Simpragma Solutions implementing text-to-speech models and containerized ML solutions.
+            </p>
+            <p>
+                My long-term vision is to develop AI systems that can reliably assist in medical diagnosis and improve healthcare accessibility through advanced computer vision and deep learning techniques.
+            </p>
+        </div>
+    </div>
+
+    <!-- News Section -->
+    <h2>News</h2>
+    <ul class="news-list">
+        <li><span class="news-date">March 2025:</span> Started AI Research Internship at Center of Data for Public Good, IISc, working on pose estimation systems.</li>
+        <li><span class="news-date">January 2025:</span> Completed ML Engineer Internship at Simpragma Solutions, focusing on TTS models and Docker containerization.</li>
+        <li><span class="news-date">October 2024:</span> Completed Neural Networks & Deep Learning certification from Coursera with 92.10% score.</li>
+        <li><span class="news-date">August 2024:</span> Completed OpenCV Computer Vision certification.</li>
+    </ul>
+
+    <!-- Research & Projects -->
+    <h2>Selected Projects</h2>
+
+    <div class="project">
+        <div class="project-header">
+            <img src="https://via.placeholder.com/180x120" alt="CKD Project" class="project-image">
+            <div class="project-info">
+                <div class="project-title">Chronic Kidney Disease Detection System</div>
+                <div class="project-authors">Syed Salahuddin Quadri</div>
+                <div class="project-venue">Machine Learning for Healthcare, 2024</div>
+                <div class="project-links">
+                    <a href="https://github.com/Salahuddin-quadri/CKD" target="_blank">[Code]</a>
+                    <a href="https://github.com/Salahuddin-quadri/CKD" target="_blank">[Project]</a>
                 </div>
             </div>
         </div>
-    </header>
+        <p style="font-size: 14px; color: #666; line-height: 1.6;">
+            Developed an advanced ensemble learning system for chronic kidney disease detection using comprehensive feature engineering. The system achieves high accuracy in medical diagnosis through sophisticated machine learning techniques and optimized data preprocessing pipelines.
+        </p>
+    </div>
 
-    <main class="container-fluid">
-        <!-- Work Experience -->
-        <section class="section">
-            <div class="container">
-                <h2>Professional Experience</h2>
-                
-                <div class="row g-3">
-                    <div class="col-lg-6">
-                        <div class="card">
-                            <span class="date-badge">Mar 2025 – Present</span>
-                            <h4 class="card-title">AI Research Intern</h4>
-                            <p class="card-company">Center of Data for Public Good (CDPG), FSID, IISc</p>
-                            <ul>
-                                <li>Restored Stacked Hourglass model with improved dependency management and keypoint annotations</li>
-                                <li>Applied advanced augmentation techniques and hyperparameter optimization for enhanced performance</li>
-                                <li>Developed expertise in autoencoder architectures and pose estimation systems</li>
-                            </ul>
-                        </div>
-                    </div>
-                    
-                    <div class="col-lg-6">
-                        <div class="card">
-                            <span class="date-badge">Oct 2024 – Jan 2025</span>
-                            <h4 class="card-title">ML Engineer Intern</h4>
-                            <p class="card-company">Simpragma Solutions Pvt Ltd.</p>
-                            <ul>
-                                <li>Implemented multiple TTS models with optimized CPU inference and performance benchmarking</li>
-                                <li>Containerized ML models using Docker for scalable deployment solutions</li>
-                                <li>Established debugging workflows and performance evaluation frameworks</li>
-                            </ul>
-                        </div>
-                    </div>
+    <div class="project">
+        <div class="project-header">
+            <img src="https://via.placeholder.com/180x120" alt="Melanoma Project" class="project-image">
+            <div class="project-info">
+                <div class="project-title">Melanoma Dermoscopic Prognosis</div>
+                <div class="project-authors">Syed Salahuddin Quadri</div>
+                <div class="project-venue">Computer Vision for Healthcare, 2024</div>
+                <div class="project-links">
+                    <a href="https://github.com/Salahuddin-quadri/Melanoma-Dermoscopic-Prognosis" target="_blank">[Code]</a>
                 </div>
             </div>
-        </section>
+        </div>
+        <p style="font-size: 14px; color: #666; line-height: 1.6;">
+            Implemented a deep learning-based system for melanoma detection from dermoscopic images. Utilized convolutional neural networks and advanced image processing techniques to classify skin lesions with high diagnostic accuracy.
+        </p>
+    </div>
 
-        <!-- Projects -->
-        <section class="section">
-            <div class="container">
-                <h2>Featured Projects</h2>
-                
-                <div class="projects-grid">
-                    <div class="card">
-                        <h4 class="card-title">Chronic Kidney Disease Detection</h4>
-                        <p style="font-size: 12px; margin-bottom: 8px;">Advanced ensemble learning system with comprehensive feature engineering achieving superior medical diagnosis accuracy.</p>
-                        <div class="mb-2">
-                            <span class="skill-tag">Ensemble ML</span>
-                            <span class="skill-tag">Healthcare AI</span>
-                            <span class="skill-tag">Feature Engineering</span>
-                        </div>
-                        <a href="https://github.com/Salahuddin-quadri/CKD" class="project-link" target="_blank">
-                            <i class="fab fa-github"></i> View Code
-                        </a>
-                    </div>
-                    
-                    <div class="card">
-                        <h4 class="card-title">Enhanced Lip-Reading System</h4>
-                        <p style="font-size: 12px; margin-bottom: 8px;">CNN-based lip-reading model with advanced image processing achieving significant accuracy and speed improvements.</p>
-                        <div class="mb-2">
-                            <span class="skill-tag">Computer Vision</span>
-                            <span class="skill-tag">CNNs</span>
-                            <span class="skill-tag">Image Processing</span>
-                        </div>
-                    </div>
-                    
-                    <div class="card">
-                        <h4 class="card-title">AI-Powered Visual Analysis</h4>
-                        <p style="font-size: 12px; margin-bottom: 8px;">Real-time object detection and description system integrating YOLO, OpenCV, and GPT APIs.</p>
-                        <div class="mb-2">
-                            <span class="skill-tag">YOLO</span>
-                            <span class="skill-tag">OpenCV</span>
-                            <span class="skill-tag">NLP Integration</span>
-                        </div>
-                    </div>
+    <div class="project">
+        <div class="project-header">
+            <img src="https://via.placeholder.com/180x120" alt="Lip Reading Project" class="project-image">
+            <div class="project-info">
+                <div class="project-title">Enhanced Lip-Reading System</div>
+                <div class="project-authors">Syed Salahuddin Quadri</div>
+                <div class="project-venue">Computer Vision & NLP, 2024</div>
+            </div>
+        </div>
+        <p style="font-size: 14px; color: #666; line-height: 1.6;">
+            Developed a CNN-based lip-reading model with advanced image processing achieving significant accuracy and speed improvements. The system integrates computer vision techniques for real-time visual speech recognition.
+        </p>
+    </div>
+
+    <div class="project">
+        <div class="project-header">
+            <img src="https://via.placeholder.com/180x120" alt="Recommender Project" class="project-image">
+            <div class="project-info">
+                <div class="project-title">End-to-End Recommender System</div>
+                <div class="project-authors">Syed Salahuddin Quadri</div>
+                <div class="project-venue">Machine Learning, 2024</div>
+                <div class="project-links">
+                    <a href="https://github.com/Salahuddin-quadri/End-to-End-Recommender-System" target="_blank">[Code]</a>
                 </div>
             </div>
-        </section>
+        </div>
+        <p style="font-size: 14px; color: #666; line-height: 1.6;">
+            Built a complete recommendation system using collaborative filtering and deep learning techniques. Implemented data pipelines, model training, and deployment workflows for scalable recommendations.
+        </p>
+    </div>
 
-        <!-- Skills Network -->
-        <section class="section">
-            <div class="container">
-                <h2>Technical Neural Network</h2>
-                
-                <div class="skills-network">
-                    <div class="skills-category">
-                        <h5>Programming Core</h5>
-                        <div>
-                            <span class="skill-tag">Python</span>
-                            <span class="skill-tag">C/C++</span>
-                            <span class="skill-tag">MySQL</span>
-                            <span class="skill-tag">MongoDB</span>
-                        </div>
-                    </div>
-                    
-                    <div class="skills-category">
-                        <h5>AI/ML Frameworks</h5>
-                        <div>
-                            <span class="skill-tag">PyTorch</span>
-                            <span class="skill-tag">TensorFlow</span>
-                            <span class="skill-tag">Keras</span>
-                            <span class="skill-tag">Scikit-Learn</span>
-                            <span class="skill-tag">XGBoost</span>
-                            <span class="skill-tag">OpenCV</span>
-                        </div>
-                    </div>
-                    
-                    <div class="skills-category">
-                        <h5>Data Processing</h5>
-                        <div>
-                            <span class="skill-tag">NumPy</span>
-                            <span class="skill-tag">Pandas</span>
-                            <span class="skill-tag">Matplotlib</span>
-                            <span class="skill-tag">Seaborn</span>
-                        </div>
-                    </div>
-                    
-                    <div class="skills-category">
-                        <h5>DevOps Tools</h5>
-                        <div>
-                            <span class="skill-tag">Docker</span>
-                            <span class="skill-tag">Git</span>
-                            <span class="skill-tag">Linux</span>
-                            <span class="skill-tag">SSH</span>
-                            <span class="skill-tag">VS Code</span>
-                            <span class="skill-tag">LaTeX</span>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </section>
+    <!-- Experience -->
+    <h2>Experience</h2>
 
-        <!-- Compact Education -->
-        <section class="section">
-            <div class="container">
-                <h2>Education</h2>
-                
-                <div class="education-compact">
-                    <div class="education-item">
-                        <span class="date-badge">2022 – 2026</span>
-                        <h4 class="card-title">BE AI & ML (Honours)</h4>
-                        <p class="card-company">BMS Institute of Technology & Management, Bangalore</p>
-                        <p style="font-size: 12px; color: var(--text-secondary); margin-bottom: 0;"><strong>CGPA:</strong> 8.9/10</p>
-                    </div>
-                    
-                    <div class="education-item">
-                        <span class="date-badge">2022</span>
-                        <h4 class="card-title">Pre-University (12th)</h4>
-                        <p class="card-company">Bellary Independent PU College, Bellary</p>
-                        <p style="font-size: 12px; color: var(--text-secondary); margin-bottom: 0;"><strong>Score:</strong> 89%</p>
-                    </div>
-                </div>
-            </div>
-        </section>
+    <div class="experience-item">
+        <div class="experience-title">AI Research Intern</div>
+        <div class="experience-org">Center of Data for Public Good (CDPG), FSID, Indian Institute of Science</div>
+        <div class="experience-date">March 2025 - Present</div>
+        <div class="experience-desc">
+            Working on pose estimation systems using Stacked Hourglass models. Implemented advanced augmentation techniques and hyperparameter optimization. Developing expertise in autoencoder architectures for computer vision applications.
+        </div>
+    </div>
 
-        <!-- Compact Certifications -->
-        <section class="section">
-            <div class="container">
-                <h2>Neural Learning Certificates</h2>
-                
-                <div class="cert-grid">
-                    <div class="cert-item">
-                        <div class="cert-title">Neural Networks & Deep Learning</div>
-                        <div class="cert-details">Coursera • 92.10% • Oct 2024</div>
-                    </div>
-                    
-                    <div class="cert-item">
-                        <div class="cert-title">ML Specialization (3-Series)</div>
-                        <div class="cert-details">Coursera • Jul 2024</div>
-                    </div>
-                    
-                    <div class="cert-item">
-                        <div class="cert-title">OpenCV Computer Vision</div>
-                        <div class="cert-details">OpenCV Courses • Aug 2024</div>
-                    </div>
-                    
-                    <div class="cert-item">
-                        <div class="cert-title">Data Preprocessing & FE</div>
-                        <div class="cert-details">Udemy • Apr 2024</div>
-                    </div>
-                    
-                    <div class="cert-item">
-                        <div class="cert-title">Statistical Learning Analysis</div>
-                        <div class="cert-details">NPTEL • 63/100 • Jul 2023</div>
-                    </div>
-                </div>
-            </div>
-        </section>
-    </main>
+    <div class="experience-item">
+        <div class="experience-title">ML Engineer Intern</div>
+        <div class="experience-org">Simpragma Solutions Pvt Ltd.</div>
+        <div class="experience-date">October 2024 - January 2025</div>
+        <div class="experience-desc">
+            Implemented multiple text-to-speech models with optimized CPU inference. Containerized ML models using Docker for scalable deployment. Established debugging workflows and performance evaluation frameworks for production systems.
+        </div>
+    </div>
+
+    <!-- Education -->
+    <h2>Education</h2>
+
+    <div class="experience-item">
+        <div class="experience-title">Bachelor of Engineering in AI & Machine Learning (Honours)</div>
+        <div class="experience-org">BMS Institute of Technology & Management, Bangalore</div>
+        <div class="experience-date">2022 - 2026 (Expected)</div>
+        <div class="experience-desc">
+            CGPA: 8.9/10.0 • Relevant Coursework: Deep Learning, Computer Vision, Machine Learning, Data Structures & Algorithms, Statistical Learning
+        </div>
+    </div>
+
+    <!-- Skills -->
+    <h2>Technical Skills</h2>
+    <div class="skills-grid">
+        <div class="skill-category">
+            <div class="skill-category-title">Programming Languages</div>
+            <div class="skill-items">Python, C/C++, SQL</div>
+        </div>
+        <div class="skill-category">
+            <div class="skill-category-title">ML/DL Frameworks</div>
+            <div class="skill-items">PyTorch, TensorFlow, Keras, Scikit-Learn, XGBoost, OpenCV</div>
+        </div>
+        <div class="skill-category">
+            <div class="skill-category-title">Data Processing</div>
+            <div class="skill-items">NumPy, Pandas, Matplotlib, Seaborn</div>
+        </div>
+        <div class="skill-category">
+            <div class="skill-category-title">Tools & Platforms</div>
+            <div class="skill-items">Docker, Git, Linux, MongoDB, MySQL, LaTeX</div>
+        </div>
+    </div>
 
     <!-- Footer -->
     <footer>
-        <div class="container">
-            <p>&copy; 2025 Syed Salahuddin Quadri • AI/ML Engineer</p>
-            <p class="mt-1">
-                <a href="mailto:salahuddinq125@gmail.com">salahuddinq125@gmail.com</a> • 
-                Last updated: Sep 2025
-            </p>
-        </div>
+        <p>&copy; 2025 Syed Salahuddin Quadri • Last updated: November 2025</p>
     </footer>
-
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
-    <script>
-        // Neural Network Animation
-        function createNeuralNetwork() {
-            const neuralBg = document.getElementById('neuralBg');
-            const nodes = 15;
-            const connections = 8;
-            
-            // Create nodes
-            for (let i = 0; i < nodes; i++) {
-                const node = document.createElement('div');
-                node.className = 'neural-node';
-                node.style.left = Math.random() * 100 + '%';
-                node.style.top = Math.random() * 100 + '%';
-                node.style.animationDelay = Math.random() * 2 + 's';
-                neuralBg.appendChild(node);
-            }
-            
-            // Create connections
-            for (let i = 0; i < connections; i++) {
-                const connection = document.createElement('div');
-                connection.className = 'neural-connection';
-                connection.style.width = Math.random() * 200 + 100 + 'px';
-                connection.style.left = Math.random() * 80 + '%';
-                connection.style.top = Math.random() * 80 + 20 + '%';
-                connection.style.transform = 'rotate(' + Math.random() * 180 + 'deg)';
-                connection.style.animationDelay = Math.random() * 3 + 's';
-                neuralBg.appendChild(connection);
-            }
-        }
-        
-        // Initialize neural network
-        document.addEventListener('DOMContentLoaded', createNeuralNetwork);
-    </script>
 </body>
 </html>
